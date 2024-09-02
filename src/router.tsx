@@ -20,7 +20,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: AppRoutes.Home,
-        element: <App/>,
+        element: <HomePage/>,
       },
       // {
       //   path: AppRoutes.Category,

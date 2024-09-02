@@ -1,5 +1,6 @@
 import React, {ReactNode} from 'react';
 import {Footer, Header} from "./index";
+import {Checkbox, Stack} from "@mui/material";
 
 export interface MainProps {
   children: ReactNode
@@ -7,14 +8,13 @@ export interface MainProps {
 
 function Main({children}: MainProps) {
   return (
-    <div>
+    <>
       <Header/>
-      {children}
-      {/*<Stack component='main' sx={{minHeight: '100dvh'}} direction='column'>*/}
-      {/*  {children}*/}
-      {/*</Stack>*/}
+      <Stack component='main' sx={{minHeight: '100dvh', mx: 'auto'}} direction='column'>
+        {children}
+      </Stack>
       <Footer/>
-    </div>
+    </>
   );
 }
 
