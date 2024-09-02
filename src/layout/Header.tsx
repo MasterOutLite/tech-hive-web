@@ -2,8 +2,8 @@ import React, {memo} from 'react';
 import {Box, ButtonGroup, IconButton, Stack, Typography} from "@mui/material";
 import {useNavigate} from "react-router-dom";
 import AuthenticationButton from "components/AuthenticationButton";
-import shoppingCart from 'assets/icon/shopping-cart.svg';
-import heartIcon from 'assets/icon/heart-icon.svg';
+import shoppingCart from 'assets/icon/shopping_cart.svg';
+import heartIcon from 'assets/icon/heart_icon.svg';
 import SearchField from "components/SearchField";
 
 function Header() {
