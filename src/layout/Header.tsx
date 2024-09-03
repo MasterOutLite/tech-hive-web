@@ -22,7 +22,7 @@ function Header() {
       <Box sx={{background: '#F7F7F7', height: '46px', width: '94px'}}>
         Logo
       </Box>
-      <Stack direction='row' spacing={2} alignItems='center'>
+      <Stack direction='row' spacing={2} alignItems='center' sx={{display: {xs: 'none', md: 'flex'}}}>
         {
           menuList.map((value, index) =>
             <Typography key={index} onClick={goToByHref(value.href)}>

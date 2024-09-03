@@ -1,18 +1,20 @@
 import React, {memo} from 'react';
-import {Box, Divider, Stack, styled, Typography} from "@mui/material";
+import {Box, Container, Divider, Grid2, Stack, styled, Typography} from "@mui/material";
 
 function Footer() {
   return (
     <Stack component='footer'>
       <Divider/>
-      <Stack direction='row' justifyContent='center' gap='40px' my='16px'>
-        {
-          labelList.map((value, index) =>
-            <Label key={index}>{
-              value
-            }</Label>)
-        }
-      </Stack>
+      <Container>
+        <Stack direction='row' justifyContent='center' spacing={6} my='16px'>
+          {
+            labelList.map((value, index) =>
+              <Label key={index}>{
+                value
+              }</Label>)
+          }
+        </Stack>
+      </Container>
     </Stack>
   );
 }
