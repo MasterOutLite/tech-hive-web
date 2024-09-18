@@ -9,7 +9,7 @@ export interface HomePageProps {
 
 function HomePage({}: HomePageProps) {
   return (
-    <Container>
+    <Container maxWidth='xl' sx={{pb: 6}}>
       <Stack>
         <Grid2 container height={{xs: 'auto', md: 530}} spacing={4} py={6} px={4}>
           <Grid2 component='article' size={{xs: 12, md: 4}}>

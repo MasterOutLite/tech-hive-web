@@ -4,6 +4,8 @@ import {createBrowserRouter, Outlet} from "react-router-dom";
 import Main from "./layout";
 import HomePage from "page/HomePage";
 import App from "./App";
+import ItemPage from "./page/ItemPage";
+import FilterPage from "./page/FilterPage";
 
 
 export enum AppRoutes {
@@ -22,14 +24,14 @@ const router = createBrowserRouter([
         path: AppRoutes.Home,
         element: <HomePage/>,
       },
-      // {
-      //   path: AppRoutes.Category,
-      //   element: <CategoryPage/>,
-      // },
-      // {
-      //   path: AppRoutes.Basket,
-      //   element: <BasketPage/>,
-      // },
+      {
+        path: AppRoutes.Item + '/:id',
+        element: <ItemPage/>,
+      },
+      {
+        path: AppRoutes.Category,
+        element: <FilterPage/>,
+      },
       // {
       //   path: AppRoutes.Item + '/:id',
       //   element: <ItemPage/>,
